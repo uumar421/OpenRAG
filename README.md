@@ -47,6 +47,10 @@ After installation, download the required model:
 ollama run deepseek-r1:8b
 ```
 
+### Setting up ChatGroq
+
+To run LLMs via ChatGroq, visit their [webpage](https://console.groq.com/keys), generate an api_key and add it inside llm_service module or set as environment variable.
+
 ### Setting up LLMs
 
 In case of setting up different open source available LLMs, try the following:
