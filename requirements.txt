@@ -1,0 +1,11 @@
+streamlit
+tesseract
+pytesseract
+pdf2image
+ollama
+transformers
+torch
+langchain
+langchain_groq
+langchain_chroma
+langchain_community
