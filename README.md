@@ -8,7 +8,7 @@ This project implements a Retrieval-Augmented Generation (RAG) based AI chatbot 
 - **Ollama** (Local model execution using `ollama` API)
 - **Hugging Face Transformers** (Locally run transformer models using PyTorch)
 
-The chatbot retrieves relevant legal context from a **ChromaDB vector store** before generating responses. The project also includes a document processing script to convert legal documents (PDFs) into vector embeddings, which are stored in ChromaDB for efficient retrieval.
+The chatbot retrieves relevant context from a **ChromaDB vector store** before generating responses. The project also includes a document processing script to convert documents (PDFs) into vector embeddings, which are stored in ChromaDB for efficient retrieval.
 
 ## Features
 
@@ -76,7 +76,7 @@ This will launch the chatbot interface in a web browser.
 To preprocess and store documents as vector embeddings:
 
 ```bash
-python document_vectorization.py path/to/legal_document.pdf
+python document_vectorization.py path/to/document.pdf
 ```
 
 ### Selecting an LLM
@@ -91,7 +91,7 @@ The chatbot allows selection of different LLMs via a dropdown menu:
 
 ```
 ├── llm_service.py                 # Handles response generation from Groq, Ollama, or Hugging Face models
-├── retrieval_service.py           # Retrieves relevant legal context from ChromaDB
+├── retrieval_service.py           # Retrieves relevant context from ChromaDB
 ├── streamlit.py                   # Streamlit-based web interface for user interaction
 ├── document_vectorization.py      # Processes PDFs and stores embeddings in ChromaDB
 ├── requirements.txt               # List of dependencies
@@ -130,7 +130,7 @@ Converts PDFs into vector embeddings for efficient retrieval.
 
 ## Future Improvements
 
-- Expand to support multiple legal domains beyond Pakistani laws.
+- Expand to support multiple domains beyond Pakistani laws.
 - Add support for more open-source LLMs.
 - Improve retrieval mechanisms for more accurate context selection.
 - Optimize response generation for better accuracy and efficiency.
