@@ -76,7 +76,7 @@ This will launch the chatbot interface in a web browser.
 To preprocess and store documents as vector embeddings:
 
 ```bash
-python document_vectorization_script.py path/to/legal_document.pdf
+python document_vectorization.py path/to/legal_document.pdf
 ```
 
 ### Selecting an LLM
@@ -93,7 +93,7 @@ The chatbot allows selection of different LLMs via a dropdown menu:
 ├── llm_service.py                 # Handles response generation from Groq, Ollama, or Hugging Face models
 ├── retrieval_service.py           # Retrieves relevant legal context from ChromaDB
 ├── streamlit.py                   # Streamlit-based web interface for user interaction
-├── document_vectorization_script.py  # Processes PDFs and stores embeddings in ChromaDB
+├── document_vectorization.py      # Processes PDFs and stores embeddings in ChromaDB
 ├── requirements.txt               # List of dependencies
 └── chroma_db/                     # Directory for storing ChromaDB embeddings
 ```
@@ -124,7 +124,7 @@ Provides an interactive chatbot interface with:
 - Chat history management
 - Query input and response display
 
-### 4. Document Processing (`document_vectorization_script.py`)
+### 4. Document Processing (`document_vectorization.py`)
 
 Converts PDFs into vector embeddings for efficient retrieval.
 
